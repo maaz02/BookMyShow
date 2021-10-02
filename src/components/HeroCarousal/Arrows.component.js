@@ -1,4 +1,4 @@
-
+import React from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 export const NextArrow = (props) => {
@@ -7,7 +7,7 @@ export const NextArrow = (props) => {
     <>
     <div
     className=""
-    style =  { {...props.style ,  backgroundColor:"black", opacity:"0.4", width:"3.5rem" , height:"3rem",display:"flex",justifyContent:"center",alignItems:"center", borderRadius:"0.3rem 0 0 0.3rem ",position:"absolute",left:"96.333%",top:"41%",zIndex:"3" } }
+    style =  { {...props.style ,  fontSize: "40px", display: 'block', right:"-2px", top: "160px",zIndex:"15", height:"40px", width:"40px", opacity:"0.55", color:"whitesmoke", backgroundColor:"black", position:"absolute", borderRadius: "4px", paddingRight:"5px"  } }
     onClick = {props.onClick}
     >
     <span><IoIosArrowForward className="text-white text-3xl cursor-pointer opacity-100" /></span>
@@ -21,7 +21,7 @@ export const PrevArrow = (props) => {
     <>
     <div
     className=""
-    style =  { {...props.style ,  backgroundColor:"black", opacity:"0.4", width:"3.5rem" , height:"3rem",display:"flex",justifyContent:"center",alignItems:"center",borderRadius:"0 0.3rem 0.3rem 0 " ,position:"absolute",top:"45%",zIndex:"3"} }
+    style =  { {...props.style ,  fontSize: "40px", display: 'block', left:"-3px", top: "160px",zIndex:"15", height:"40px", width:"40px", opacity:"0.55", color:"whitesmoke", backgroundColor:"black", position:"absolute", borderRadius: "4px", paddingLeft:"4px"} }
     onClick = {props.onClick}
     >
     <span><IoIosArrowBack className="text-white text-3xl cursor-pointer opacity-100" /></span>
