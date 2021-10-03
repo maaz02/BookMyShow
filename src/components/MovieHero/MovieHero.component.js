@@ -1,6 +1,7 @@
 import React from "react";
 import { FaHeart } from "react-icons/fa";
 import { BiChevronRight,BiShareAlt } from "react-icons/bi"
+import launchRazorPay from "../RazorPay/RazorPay.component"
 
 const MovieHero = () => {
   return (
@@ -51,7 +52,7 @@ const MovieHero = () => {
                        <h3>2h 12m  •  Action,Adventure,Fantasy  •  UA  •  3 Sep, 2021</h3>
                     </div>
 
-                    <button className="bg-red-500 w-1/4 rounded-md font-bold py-4">Book tickets</button>
+                    <button onClick={launchRazorPay} className="bg-red-500 w-1/4 rounded-md font-bold py-4 hover:bg-red-700">Book tickets</button>
     </div>
 
     <div className="absolute w-40 text-white bg-black top-20 bg-opacity-50 right-20 z-40  py-2 flex justify-center gap-4 rounded-md cursor-pointer" >
